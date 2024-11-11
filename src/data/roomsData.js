@@ -7,7 +7,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "King Bed", "Balcony", "Mini Bar", "Smart TV"],
       pricePerNight: 200,
       availability: true,
-      imageUrl: "https://images.pexels.com/photos/1743376/pexels-photo-1743376.jpeg"
+      imageUrl: "https://images.pexels.com/photos/8134808/pexels-photo-8134808.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "Queen Bed", "Air Conditioning", "Smart TV"],
       pricePerNight: 120,
       availability: true,
-      imageUrl: "https://images.pexels.com/photos/1062642/pexels-photo-1062642.jpeg"
+      imageUrl: "https://images.pexels.com/photos/14917460/pexels-photo-14917460.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "Two Queen Beds", "Kitchenette", "Smart TV"],
       pricePerNight: 180,
       availability: false,
-      imageUrl: "https://images.pexels.com/photos/1607753/pexels-photo-1607753.jpeg"
+      imageUrl: "https://images.pexels.com/photos/28347476/pexels-photo-28347476/free-photo-of-a-hotel-room-with-a-bed-television-and-wooden-floors.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "King Bed", "Rooftop Terrace", "Hot Tub", "Mini Bar", "Smart TV"],
       pricePerNight: 500,
       availability: true,
-      imageUrl: "https://images.unsplash.com/photo-1541424512-f835b6ebca83"
+      imageUrl: "https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "Twin Bed", "Air Conditioning", "Desk"],
       pricePerNight: 80,
       availability: true,
-      imageUrl: "https://images.unsplash.com/photo-1603052875956-06f8a7b6bb0f"
+      imageUrl: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ const hotelRooms = [
       amenities: ["Wi-Fi", "Queen Bed", "Private Patio", "Smart TV"],
       pricePerNight: 150,
       availability: false,
-      imageUrl: "https://images.pexels.com/photos/1676761/pexels-photo-1676761.jpeg"
+      imageUrl: "https://images.pexels.com/photos/12604494/pexels-photo-12604494.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ];
   
