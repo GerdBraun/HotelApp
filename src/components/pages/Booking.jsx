@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import hotelRooms from "../../data/roomsData";
 import { useEffect, useState } from "react";
 
@@ -11,6 +11,8 @@ const Booking = () => {
   const [errors, setErrors] = useState({});
   const [bill, setBill] = useState();
   const { id } = useParams();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setReservation((prev) => ({ ...prev, roomId: id }));
@@ -27,7 +29,7 @@ const Booking = () => {
     const secondDate = new Date(reservation.dateTo);
     const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
     console.log(diffDays);
-    
+
     setBill("€" + newBill);
   }, [reservation]);
 
@@ -56,6 +58,7 @@ const Booking = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) return;
+    navigate("/thank-you-booking");
   };
   return (
     <div className="hero bg-base-200 min-h-screen">

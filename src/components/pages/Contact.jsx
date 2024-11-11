@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const Contact = () => {
     phone: '',
     message: '',
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +23,8 @@ const Contact = () => {
     e.preventDefault();
     
     console.log('Form submitted:', formData);
+
+    navigate("/thank-you-contact");
   };
 
   return (
