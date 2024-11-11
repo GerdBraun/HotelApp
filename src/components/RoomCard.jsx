@@ -12,7 +12,7 @@ const RoomCard = ({ room }) => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{room.name}</h2>
-        <p>{room.description}</p>
+        <p></p>
         <div className="flex justify-between items-center">
           <span className="font-semibold text-lg">
             €{room.pricePerNight} / night
@@ -26,9 +26,10 @@ const RoomCard = ({ room }) => {
           </span>
         </div>
         
-        <div className="card-actions">
-          <Link to={`/booking/${room.id}`} className="btn">Book Now</Link>
+        <div className="card-actions flex justify-center">
+          <Link to={`/booking/${room.id}`} className="btn bg-yellow-50">Book Now</Link>
         </div>
+        <Link to={`/rooms/${room.id}`} className="btn btn-primary">Room Details</Link>
       </div>
     </div>
   );
