@@ -1,6 +1,6 @@
 const RoomCard = ({ room }) => {
   return (
-    <div className="card w-80 bg-base-100 shadow-xl">
+    <div className="card w-full bg-base-100 shadow-xl">
       <figure>
         <img src={room.imageUrl} alt={room.name} className="w-full h-48 object-cover" />
       </figure>
