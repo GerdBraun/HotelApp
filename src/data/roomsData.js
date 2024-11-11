@@ -1,4 +1,3 @@
-// src/data/roomsData.js
 const hotelRooms = [
     {
       id: 1,
