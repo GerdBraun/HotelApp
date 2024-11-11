@@ -8,7 +8,7 @@ const RoomCard = ({ room }) => {
         <h2 className="card-title">{room.name}</h2>
         <p>{room.description}</p>
         <div className="flex justify-between items-center">
-          <span className="font-semibold text-lg">${room.pricePerNight} / night</span>
+          <span className="font-semibold text-lg">€{room.pricePerNight} / night</span>
           <span className={`badge ${room.availability ? 'badge-success' : 'badge-error'}`}>
             {room.availability ? 'Available' : 'Booked'}
           </span>
