@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
@@ -24,21 +26,13 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>Rooms</a>
-              <ul className="p-2">
-                <li>
-                  <a>Room 1</a>
-                </li>
-                <li>
-                  <a>Room 2</a>
-                </li>
-              </ul>
+              <NavLink to="/rooms">Rooms</NavLink>
             </li>
             <li>
-              <a>Contact</a>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
@@ -47,23 +41,13 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <details>
-              <summary>Rooms</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Room 1</a>
-                </li>
-                <li>
-                  <a>Room 2</a>
-                </li>
-              </ul>
-            </details>
+            <NavLink to="/rooms">Rooms</NavLink>
           </li>
           <li>
-            <a>Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
