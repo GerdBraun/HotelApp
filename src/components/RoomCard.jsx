@@ -26,8 +26,8 @@ const RoomCard = ({ room }) => {
           </span>
         </div>
         
-        <div className="card-actions">
-          <Link to={`/booking/${room.id}`} className="btn">Book Now</Link>
+        <div className="card-actions flex justify-center">
+          <Link to={`/booking/${room.id}`} className="btn bg-yellow-50">Book Now</Link>
         </div>
         <Link to={`/rooms/${room.id}`} className="btn btn-primary">Room Details</Link>
       </div>

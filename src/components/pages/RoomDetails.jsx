@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom';
 import hotelRooms from '../../data/roomsData';
+import { Link } from 'react-router-dom';
 const RoomDetails = () => {
   const { roomId } = useParams(); 
   const room = hotelRooms.find(r => r.id === parseInt(roomId)); 
-  
+
   if (!room) {
     return <div>Room not found!</div>; 
   }
@@ -22,6 +23,11 @@ const RoomDetails = () => {
           <span className={`badge ${room.availability ? 'badge-success' : 'badge-error'}`}>
             {room.availability ? 'Available' : 'Booked'}
           </span>
+
+          <div className="card-actions justify-end mt-4">
+            <Link to={`/booking/${room.id}`} className="btn btn-primary">Book Now</Link>
+          </div>
+
         </div>
       </div>
     </div>
